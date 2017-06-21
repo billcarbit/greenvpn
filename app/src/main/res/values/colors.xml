@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="green">#59972d</color>
+    <color name="xianlu">#63b925</color>
+    <color name="grey">#e0e0e0</color>
+    <color name="white">#ffffff</color>
+    <color name="divider">#dddddd</color>
+    <color name="black">#101010</color>
+
+
 </resources>
