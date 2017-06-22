@@ -1,5 +1,6 @@
 package com.green.vpn;
 
+import android.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -15,7 +16,13 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ConnectFragment fragment1 = new ConnectFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("a", "1");
+        fragment1.setArguments(bundle);
+        ft.replace(R.id.frame_layout, fragment1);
+        ft.commitAllowingStateLoss();
     }
 
     @Override
